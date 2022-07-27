@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CDN  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Modification  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        darkYellow: '#FECC02',
+                        black: '#131313',
+                        gray: '#4E4E4E',
+                    },
+                    fontFamily: {
+                        bebas: ['Bebas Neue', 'cursive'],
+                        montserrat: ['Montserrat', 'sans-serif']
+                    },
+                    backgroundImage: {
+                        'landingImage': "url('./images/banner.jpg')",
+                        'filmImage': "url('./images/camera-man.jpg')",
+                        'inception': "url('./images/inception.jpg')",
+                        'fractured': "url('./images/fractured.jpg')",
+                        'interstellar': "url('./images/interstellar.jpg')",
+                        'tenet': "url('./images/tenet.jpg')",
+                        'footer': "url('./images/footer-bg.jpg')",
+
+                    },
+                    screens: {
+                        'xs': '418px',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <!-- navbar  -->
+        <nav
+            class="font-bebas flex justify-between items-center w-full h-24 px-2 sm:px-14 md:px-20 lg:px-32 absolute top-0">
+            <div class="text-lg sm:text-2xl md:text-3xl lg:text-4xl">
+                <h2>MBR Production</h2>
+            </div>
+            <ul class="flex text-sm sm:text-lg md:text-xl gap-2 sm:gap-3 md:gap-4 lg:gap-5">
+                <li>About Us</li>
+                <li>Our Movies</li>
+                <li>Services</li>
+            </ul>
+        </nav>
+        <!-- landing-page  -->
+        <section class="bg-landingImage bg-cover bg-top h-screen">
+            <div class="mt-24 flex items-center h-full pl-5 sm:pl-14 md:pl-20 lg:pl-32">
+                <div class="text-white font-bebas">
+                    <p class="text-xl">Movie production studio</p>
+                    <h1 class="text-5xl sm:text-6xl md:text-7xl pt-2">Films Made to</h1>
+                    <h1 class="text-5xl sm:text-6xl md:text-7xl text-darkYellow">Perfection</h1>
+                    <p class=" sm:text-lg font-montserrat sm:w-2/4 pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                        luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <button class="mt-5 border-2 py-2 px-5 text-2xl hover:text-black hover:bg-darkYellow hover:border-darkYellow">Discover More</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- filming experience  -->
+        <section class="border-2 mt-10 mx-2 lg:m-20">
+            <div class="lg:flex lg:p-8">
+                <div class="bg-filmImage lg:w-2/4 h-[300px] md:h-[450px] bg-cover bg-top flex justify-center items-end">
+                    <h2
+                        class="bg-white shadow-lg rounded text-xl sm:text-3xl font-bebas w-3/4 sm:w-3/4 text-center -mb-4 py-2">
+                        23 YEARS of EXPERIENCE</h2>
+                </div>
+                <div class="p-3 sm:pl-10 lg:w-2/4 font-bebas pt-12 lg:pt-0">
+                    <p class="uppercase text-xl">About us</p>
+                    <h1 class="uppercase text-3xl sm:text-5xl pt-2">FIlming Experience</h1>
+                    <h1 class="uppercase text-3xl sm:text-5xl py-2">Just Got better</h1>
+                    <p class="pt-2 text-sm sm:text-base font-montserrat">Primis lobortis adipiscing imperdiet dis
+                        ultricies. Id commodo interdum fermentum pede dictumst
+                        ipsum. Erat sapien phasellus suspendisse natoque nulla leo ornare mi. Pretium rhoncus venenatis
+                        ante dignissim aliquet faucibus tempus etiam feugiat.</p>
+                    <button class="mt-5 border-2 py-2 px-5 text-2xl hover:text-black hover:bg-darkYellow hover:border-darkYellow">Discover More</button>
+                </div>
+            </div>
+            <div class="grid mt-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5 sm:p-8">
+                <div class="">
+                    <hr class="border-2 bg-darkYellow border-darkYellow mb-5 w-full">
+                    <h1 class="font-bebas text-3xl uppercase">OUR VISION</h1>
+                    <p class="montserrat">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                        luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                </div>
+                <div class="">
+                    <hr class="border-2 bg-darkYellow border-darkYellow mb-5 w-full">
+                    <h1 class="font-bebas text-3xl uppercase">OUR Mission</h1>
+                    <p class="montserrat">Malesuada tempus et habitant nascetur porta nec. Fusce consequat risus per
+                        sollicitudin hendrerit suscipit convallis sociosqu.
+                    </p>
+                </div>
+                <div class="">
+                    <hr class="border-2 bg-darkYellow border-darkYellow mb-5 w-full">
+                    <h1 class="font-bebas text-3xl uppercase">OUR Motto</h1>
+                    <p class="montserrat">“We don’t make movies to make money, we make money to make more movies.”</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- our movies  -->
+        <section class="bg-gray mt-10 pb-8 sm:pb-14">
+            <div class="px-3 lg:px-20 text-white font-bebas">
+                <p class="pt-8">Our Movies</p>
+                <div class="xs:flex justify-between items-center">
+                    <h1 class="text-4xl xs:text-[42px] sm:text-5xl py-2">Movie collections</h1>
+                    <button class="text-base border-2 py-2 px-4">See More Movies</button>
+                </div>
+            </div>
+            <div class="mt-10 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mx-3 lg:mx-20">
+                <div class="border-2 border-white p-3">
+                    <div class="h-96 bg-inception bg-cover bg-center"></div>
+                </div>
+                <div class="border-2 border-white p-3">
+                    <div class="h-96 bg-fractured bg-cover bg-top"></div>
+                </div>
+                <div class="border-2 border-white p-3">
+                    <div class="h-96 bg-interstellar bg-cover bg-bottom"></div>
+                </div>
+                <div class="border-2 border-white p-3">
+                    <div class="h-96 bg-tenet bg-cover bg-center"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- services  -->
+        <section>
+            <div class="mt-20">
+                <div class="text-center uppercase font-bebas">
+                    <p class="my-2">services</p>
+                    <h1 class="text-5xl">what we offer</h1>
+                </div>
+                <div class="mt-10 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-3 lg:px-20 h-full">
+                    <div class="h-60 flex flex-col justify-center items-center border-2">
+                        <div>
+                            <img class="h-16 w-16" src="./images/icons/camera.png" alt="">
+                        </div>
+                        <div class="text-center mt-5 px-5">
+                            <h3 class="text-lg font-bold uppercase">movies director</h3>
+                            <p class="py-3">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget
+                            </p>
+                        </div>
+                    </div>
+                    <div class="h-60 flex flex-col justify-center items-center border-2">
+                        <div>
+                            <img class="h-16 w-16" src="./images/icons/3d-glasss.png" alt="">
+                        </div>
+                        <div class="text-center mt-5 px-5 uppercase">
+                            <h3 class="text-lg font-bold">3D MOVIES</h3>
+                            <p>Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget</p>
+                        </div>
+                    </div>
+                    <div class="h-60 flex flex-col justify-center items-center border-2">
+                        <div>
+                            <img class="h-16 w-16" src="./images/icons/film.png" alt="">
+                        </div>
+                        <div class="text-center mt-5 px-5">
+                            <h3 class="text-lg font-bold uppercase">Film maker</h3>
+                            <p class="py-3">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget
+                            </p>
+                        </div>
+                    </div>
+                    <div class="h-60 flex flex-col justify-center items-center border-2">
+                        <div>
+                            <img class="h-16 w-16" src="./images/icons/theater.png" alt="">
+                        </div>
+                        <div class="text-center mt-5 px-5">
+                            <h3 class="text-lg font-bold uppercase">Studio Production</h3>
+                            <p class="py-3">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget
+                            </p>
+                        </div>
+                    </div>
+                    <div class="h-60 flex flex-col justify-center items-center border-2">
+                        <div>
+                            <img class="h-16 w-16" src="./images/icons/count-down.png" alt="">
+                        </div>
+                        <div class="text-center mt-5 px-5">
+                            <h3 class="text-lg font-bold uppercase">Drama Movies</h3>
+                            <p class="py-3">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget
+                            </p>
+                        </div>
+                    </div>
+                    <div class="h-60 flex flex-col justify-center items-center border-2">
+                        <div>
+                            <img class="h-16 w-16" src="./images/icons/cut-board.png" alt="">
+                        </div>
+                        <div class="text-center mt-5 px-5">
+                            <h3 class="text-lg font-bold uppercase">Rolling Production</h3>
+                            <p class="py-3">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget
+                            </p>
+                        </div>
+                    </div>
+                    <div class="h-60 flex flex-col justify-center items-center border-2">
+                        <div>
+                            <img class="h-16 w-16" src="./images/icons/director-chair.png" alt="">
+                        </div>
+                        <div class="text-center mt-5 px-5">
+                            <h3 class="text-lg font-bold uppercase">Movie Production</h3>
+                            <p class="py-3">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget
+                            </p>
+                        </div>
+                    </div>
+                    <div class="h-60 flex flex-col justify-center items-center border-2">
+                        <div>
+                            <img class="h-16 w-16" src="./images/icons/count-down.png" alt="">
+                        </div>
+                        <div class="text-center mt-5 px-5">
+                            <h3 class="text-lg font-bold uppercase">actor action</h3>
+                            <p class="py-3">Ex quam platea aliquet viverra si dictumst lobortis quis aliquam dis eget
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer  -->
+    <footer class="mt-20 h-full bg-footer bg-cover bg-center">
+        <div class="uppercase font-bebas text-white flex flex-col justify-center items-center h-72 sm:h-64 relative">
+            <h1 class="text-3xl sm:text-4xl">jhaka naka production</h1>
+            <p class="py-3">next level experience</p>
+            <p class="font-montserrat text-xs text-center">Feugiat nibh litora semper proin nullam facilisi</p>
+            <p class="font-montserrat text-xs leading-7 lo">volutpat ex ullamcorper.</p>
+            <p class="font-montserrat text-center pt-4 text-[13px] sm:text-sm"><small>Copyright © 2021 Jhaka Naka Production, All rights
+                    reserved. Present by Mir Hussain</small></p>
+        </div>
+    </footer>
+</body>
+
+</html>
